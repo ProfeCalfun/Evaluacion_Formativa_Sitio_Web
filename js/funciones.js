@@ -7,14 +7,20 @@
         document.getElementById("imgEncendida").src="../img/encendida.jpg"; // Mostrar la imagen encendida al cargar la página
     }
     function sumaDosNumeros(){
-        let num1 = 5;
-        let num2 = 10;
+        let num1 = parseFloat(document.getElementById("num1").value);
+        let num2 = parseFloat(document.getElementById("num2").value);
         let suma = num1 + num2;
-        return suma;
+        document.getElementById("resultado").value = suma; // Mostrar el resultado en el campo de texto
     }
     function restaDosNumeros(){
-        let num1 = 10;
-        let num2 = 5;
+        let num1 = parseFloat(document.getElementById("num1").value);
+        let num2 = parseFloat(document.getElementById("num2").value);
         let resta = num1 - num2;
-        return resta;
+        document.getElementById("resultado").value = resta; // Mostrar el resultado en el campo de texto
     }
+
+    $(document).ready(function() {
+        $("#btnSuma").click(function() {
+            sumaDosNumeros();
+        });
+    })
