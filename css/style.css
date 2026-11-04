@@ -4,10 +4,19 @@ header,nav,footer {
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #7286eb;
+    background-color: #edeff7;
 }
-li {
-    display: inline-block;
-    margin-right: 20px;
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
 }
+
+#lista {
+    padding: 100px;
+    text-align: center;
+
+}
+
 
